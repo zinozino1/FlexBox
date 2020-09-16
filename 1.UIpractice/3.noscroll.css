@@ -1,0 +1,55 @@
+/* reset.css */
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+/* * block 형태로 마치 flex column처럼 되어있다면 굳이 flex쓸 필요 없음 */
+/* 하지만 스크롤을 없애는 등의 특별한 작업을 할 경우는 필요할 수도 있음 */
+
+body{
+    margin: 0;
+    /* 여긴 vh */
+    height: 100vh;
+}
+
+/* 이 부분이 중요 */
+
+.container{
+    /* 여긴 퍼센트 */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: steelblue;
+    padding: 30px;
+}
+.banner{
+    background-color: yellow;
+    padding: 30px;
+}
+section{
+    display: flex;
+    /* 여긴 퍼센트 */
+    height: 100%;
+}
+section article{
+    
+}
+.navi{
+    background-color:crimson;
+    padding: 10px;
+    
+    flex-basis: 200px;
+}
+.content{
+    background-color: royalblue;
+    padding: 10px;
+    flex: 1;
+}
+@media(max-width:400px){
+    section{
+        flex-direction: column;
+    }
+}

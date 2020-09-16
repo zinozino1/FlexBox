@@ -1,0 +1,21 @@
+body{
+   display: flex;
+   justify-content: center;
+   border: 1px solid black;
+   height: 100vh;
+}
+.parent{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    
+}
+
+.child{
+    flex: 1;
+    background-color: bisque;
+    padding: 10px;
+    margin: 3px;
+    text-align: center;
+    width: 50px;
+}

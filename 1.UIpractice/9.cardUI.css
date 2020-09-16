@@ -1,0 +1,31 @@
+/* h3,p,img{
+    margin: 0;
+} */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card-items{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+}
+.card-items .card{
+    
+}
+.card{
+    width: 300px;
+    border: 1px solid red;
+    padding: 30px;
+    box-sizing: border-box;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card h3{border: 1px solid blue;}
+.card p{border: 1px solid blue;}
+.card img{border: 1px solid blue; width: 100%;}

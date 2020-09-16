@@ -1,0 +1,53 @@
+p,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+body {
+    margin: 0;
+    border: 1px solid black;
+    font-family: "Merriweather", serif;
+}
+.container {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    /* width: 500px; */
+    display: flex;
+    box-sizing: border-box;
+    margin: 10px;
+    flex-basis: 500px;
+    background-color: rgb(255, 227, 133);
+    justify-content: center;
+    border-radius: 30px 3px;
+}
+.card img {
+    margin: 10px;
+    align-self: center;
+    border-radius: 30px 3px;
+    width: 150px;
+    height: 150px;
+}
+.card .text {
+    align-self: center;
+}
+.card .text h4 {
+    margin: 10px;
+}
+.card .text p {
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+    }
+    .card img {
+        width: 300px;
+        height: 300px;
+    }
+}

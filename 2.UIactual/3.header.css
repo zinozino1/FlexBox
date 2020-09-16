@@ -1,0 +1,113 @@
+a {
+    /* color: #fff; */
+    text-decoration: none;
+    outline: none;
+}
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+body {
+    font-family: "Merriweather", serif;
+    margin: 0;
+}
+header {
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    background-color: #00aff0;
+    height: 100px;
+    width: 100%;
+}
+.logo {
+}
+.logo a {
+}
+.logo a img {
+    margin-top: 13px;
+    width: 70px;
+    height: 70px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+
+    font-size: 20px;
+    font-family: "Kumbh Sans", sans-serif;
+}
+.menu a {
+    margin: 15px;
+    color: white;
+}
+.menu a:hover {
+    color: black;
+}
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social a {
+    margin: 3px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+}
+.social a i:hover {
+    color: black;
+}
+.social a i {
+    flex: 1;
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+section {
+    height: 1000px;
+    background-color: #6bc0df;
+}
+footer {
+    height: 400px;
+    background-color: #add9e9;
+}
+.noshow {
+    display: none;
+}
+.show {
+    display: flex;
+    transition: 0.3s;
+}
+@media (min-width: 1000px) {
+    .menu {
+        display: flex;
+    }
+    .social {
+        display: flex;
+    }
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+    .menu {
+        flex-direction: column;
+        display: none;
+    }
+    .social {
+        display: none;
+    }
+    .menu-btn {
+        display: inline;
+    }
+    .logo {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+/* 컨텐츠 요소를 보이지 않게 하는 방법 */
+/* 1. display:none <--> display:block -----> 영역 자체가 사라진다. 
+2. visibility:hidden <--> visibility:visible -----> 영역은 그대로나 내용말만 사라진다. 
+3. opacity:0 <--> opacity:1 -----> 영역은 그대로나 내용말만 사라진다. 
+4. width:0; height:0; overflow:hidden */

@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    border: 1px solid black;
+    /* display: flex; */
+
+    /* pc버전 웹사이트 기준 */
+    width: 1200px;
+    /* margin:auto; 이게 더 효율적 */  
+}
+header{
+    border: 1px solid black;   
+    padding: 2em;
+    text-align: center;
+}
+section{
+    display: flex;
+    /* flex-wrap: wrap; */
+    border: 1px solid black;
+}
+/* 모든 article에 대해 */
+section article{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    border: 1px solid black;
+    padding: 2em;
+    text-align: center;
+}
+.main{
+    background-color: crimson;
+    flex: 4 0 auto;
+}
+.right{
+    background-color: royalblue;
+    flex: 1 0 auto;
+}
+.left{
+    background-color: darkgray;
+    flex: 1 0 auto;
+}
+@media(max-width:768px){
+    .container{
+        width: 100%;
+    }
+    section{
+        flex-direction: column;
+    }
+    .left{
+        order: 2;
+    }
+    .main{
+        order: 1;
+    }
+    .right{
+        order: 3;
+    }
+    section article{
+        height: 100px;
+    }
+}

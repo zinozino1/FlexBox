@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    height: 100vh;
+    
+}
+.container{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+section{
+    display: flex;
+    height: 100%;
+}
+article, aside, nav{
+    
+    border: 1px solid black;
+}
+header{
+    background-color: cornflowerblue;
+    padding: 2em;
+    
+}
+article{
+    flex: 4;
+    
+}
+aside{
+    flex: 1;
+    
+}
+nav{
+    flex: 1;
+    
+}
+footer{
+    background-color: crimson;
+    padding: 2em;
+}

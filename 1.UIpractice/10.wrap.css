@@ -1,0 +1,20 @@
+body{
+
+}
+.container{
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    background-color: royalblue;
+    margin: 1px;
+    /* 부모 요소에서 wrap쓸거면 반드시 자식에서 wrap에 대한 기준치 즉 flex-basis를 제공해줘야함 */
+    /* flex-basis 대신에 width써도 된다. */
+    flex: 1 0 300px;
+    height: 300px;
+    
+}
+
+/* 모바일에서는 그냥 미디어쿼리 써도 되나
+태블릿까지 생각하면 wrap써야함 */

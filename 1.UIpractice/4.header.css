@@ -1,0 +1,51 @@
+body{
+    background-color: #eee;
+}
+header{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    
+}
+header div{
+
+}
+.logo{
+    background-color: cornflowerblue;
+    flex: 1;
+}
+.gnb{
+    flex: 5;
+    
+    background-color: darkgray;
+
+    /* a태그가 이미 가로배치 되어있으나 justify-content 사용하려고 flex사용. */
+    display: flex;
+    justify-content:center;
+}
+/* a태그 위치잡는 것은 flex가 아닌 이걸로 조지는 것임. 위아래는 0, 왼오는 20 */
+.gnb a{
+    margin: 0 20px;
+}
+.search{
+    background-color: darkkhaki;
+    flex: 1;
+    text-align: right;
+}
+
+@media (max-width:768px){
+    header{
+        flex-direction: column;
+        font-size: 13px;
+    }
+    .gnb a{
+        margin: 0 5px
+    }
+    .logo{
+        text-align: center;
+    }
+    .search{
+        text-align: center;
+    }
+}
