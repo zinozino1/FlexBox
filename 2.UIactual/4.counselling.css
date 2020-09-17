@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    width: 1200px;
+}
+
+section .consulting-header {
+    text-align: center;
+    margin: 10px;
+}
+section .consulting-header h1 {
+}
+section .consulting-header h1 span {
+}
+section .consulting-header p {
+}
+
+section .consulting-form {
+}
+section .consulting-form .row {
+    display: flex;
+}
+section .consulting-form .row .field {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 10px;
+}
+section .consulting-form .row .field label {
+    margin-bottom: 3px;
+}
+section .consulting-form .row .field label em {
+    color: red;
+}
+section .consulting-form .row .field input {
+    border: 1px solid rgb(168, 162, 162);
+    border-radius: 5px;
+    height: 30px;
+}
+section .consulting-form .row .field input:hover {
+    /* border: blue solid 1px; */
+    box-shadow: 0 0 5px skyblue;
+}
+section .consulting-form .row .field input:focus {
+    border: skyblue solid 1px;
+    box-shadow: 0 0 5px skyblue;
+}
+section .consulting-form .row .field select {
+    border: 1px solid rgb(168, 162, 162);
+    border-radius: 5px;
+    height: 35px;
+}
+section .consulting-form .row .field select:hover {
+    border: skyblue solid 1px;
+    box-shadow: 0 0 5px skyblue;
+}
+section .consulting-form .row .field textarea {
+    border: 1px solid rgb(168, 162, 162);
+    border-radius: 5px;
+    height: 100px;
+}
+section .consulting-form .row .field textarea:hover {
+    border: skyblue solid 1px;
+    box-shadow: 0 0 5px skyblue;
+}
+
+section .consulting-form .policy {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+section .consulting-form .policy h4 {
+}
+section .consulting-form .policy iframe {
+    margin-bottom: 10px;
+}
+section .consulting-form .policy .btn-submit-container {
+    text-align: center;
+}
+section .consulting-form .policy .btn-submit-container button {
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid rgb(168, 162, 162);
+    border-radius: 5px;
+}
+section .consulting-form .policy .agreement {
+}
+section .consulting-form .policy .agreement input {
+}
+
+@media (max-width: 768px) {
+    section .consulting-form .row {
+        flex-direction: column;
+    }
+}
