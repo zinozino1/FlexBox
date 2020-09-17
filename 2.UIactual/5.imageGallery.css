@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    /* border: 1px solid red; */
+
+    display: flex;
+    justify-content: center;
+}
+.container {
+    width: 800px;
+}
+.container header {
+    position: fixed;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    width: 800px;
+}
+.container header .link {
+    margin: 25px;
+}
+.container header .link a {
+    text-decoration: none;
+    color: rgb(172, 165, 165);
+}
+.container header .link a:hover {
+    color: crimson;
+    transition: 0.5s;
+}
+
+.container section {
+    margin-top: 100px;
+}
+.container section .search-profile {
+}
+.container section .search-profile form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container section .search-profile form .btn:hover {
+    box-shadow: red 0 0 7px;
+    transition: 0.5s;
+    color: red;
+    background-color: white;
+}
+.container section .search-profile form .sear {
+    padding-left: 30px;
+    border: none;
+    border-bottom: 1px solid rgb(172, 165, 165);
+    width: 250px;
+    height: 30px;
+    font-size: 15px;
+    background: url("./imgs/search.png") no-repeat center left;
+    background-size: 20px;
+    color: rgb(211, 201, 201);
+}
+.container section .search-profile form .sear:focus {
+    /* visibility: hidden; */
+    outline: none;
+}
+.container section .search-profile form .btn {
+    margin: 30px;
+    margin-right: 7px;
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: crimson;
+    border: none;
+    border-radius: 5px;
+    box-shadow: black 0 0 3px;
+    font-size: 15px;
+}
+.container section .search-profile form input {
+    margin: 30px;
+    margin-left: 7px;
+}
+
+.container section .card {
+}
+.container section .card {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container section .card .image {
+    flex: 1;
+    flex-basis: 200px;
+    margin: 7px;
+}
+.container section .card .image img {
+    width: 100%;
+    height: 180px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.container section .card .image img:hover {
+    box-shadow: grey 0 0 10px;
+}
+@media (max-width: 768px) {
+    .container section .card .image {
+        flex-basis: 100px;
+    }
+}
