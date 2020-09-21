@@ -97,7 +97,25 @@ body {
     box-shadow: grey 0 0 10px;
 }
 @media (max-width: 768px) {
+    .container section .card {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .container section .card .image {
-        flex-basis: 100px;
+        width: 95%;
+
+        margin: 5px 0;
+    }
+    .container section .search-profile form {
+        flex-direction: column;
+    }
+    .container section .card .image img {
+        height: 200px;
+    }
+    .container header {
+        justify-content: center;
+        width: 100%;
     }
 }
