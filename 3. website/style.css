@@ -1,0 +1,83 @@
+/* Common CSS */
+.inner {
+    width: 1300px;
+    margin: auto;
+    border: 1px solid red;
+}
+
+/* Header */
+header {
+    position: fixed;
+    /* 중요 - fixed하면 w100p무조건 넣어줘야함 */
+    width: 100%;
+}
+header .banner {
+    background-color: black;
+}
+header .banner .lnb {
+    width: 1300px;
+    margin: auto;
+    /* div안의 a태그이기 때문에 flex쓸 필요 없음 */
+    /* text-align: right; */
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px;
+}
+header .banner .lnb a {
+    margin-left: 20px;
+    color: #ddd;
+}
+header .banner .lnb a:hover {
+    color: #bbb;
+}
+header .banner .lnb a em {
+    color: #bbb;
+}
+header nav {
+    padding-top: 20px;
+    width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+}
+header nav .logo {
+}
+header nav .gnb {
+    display: flex;
+    align-items: center;
+}
+header nav .gnb li {
+    margin-left: 40px;
+}
+header nav .gnb li a {
+    color: #ddd;
+}
+header nav .gnb li a:hover {
+    color: #333;
+    transition: 0.5s;
+}
+/* Intro */
+.intro {
+    /* 처음 웹사이트를 방문했을 때 화면이 꽉차게 */
+    height: 100vh;
+    background: url("./images/intro.jpg") no-repeat center center;
+    /* 매우 중요 - 백그라운드랑 그냥 이미지태그로 넣는 것은 크기 지정방법이 다르다.*/
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.intro .heading {
+    color: white;
+    text-align: center;
+}
+.intro .heading h1 {
+    font-size: 56px;
+    margin-bottom: 40px;
+}
+.intro .heading p {
+    font-size: 22px;
+    line-height: 1.5em;
+    padding: 0 150px;
+    font-weight: 300;
+}
