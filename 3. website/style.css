@@ -1,5 +1,6 @@
 /* Common CSS */
 .inner {
+    /* 아래 두줄 이외의 기능은 넣지 않는 것이 좋다 ex) d:f*/
     width: 1300px;
     margin: auto;
     border: 1px solid red;
@@ -57,6 +58,7 @@ header nav .gnb li a:hover {
     color: #333;
     transition: 0.5s;
 }
+
 /* Intro */
 .intro {
     /* 처음 웹사이트를 방문했을 때 화면이 꽉차게 */
@@ -80,4 +82,142 @@ header nav .gnb li a:hover {
     line-height: 1.5em;
     padding: 0 150px;
     font-weight: 300;
+}
+
+/* about */
+.about {
+}
+.about .inner {
+}
+.about .inner .about-content {
+    padding: 100px 0;
+    display: flex;
+}
+.about .inner .about-content div {
+    padding: 50px;
+}
+.about .inner .about-content .desc {
+    flex: 4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about .inner .about-content .desc h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.about .inner .about-content .desc p {
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+.about .inner .about-content .desc a {
+    color: crimson;
+    font-weight: bold;
+}
+.about .inner .about-content .desc a:hover {
+    text-decoration: underline;
+}
+.about .inner .about-content .photo {
+    flex: 3;
+}
+.about .inner .about-content .photo img {
+    width: 100%;
+    /* 중첩해야 원하는대로 나옴 */
+    border-radius: 60% 60% 50% 65% / 60% 70% 50% 60%;
+}
+
+/* Call Action */
+
+.callaction {
+}
+.callaction .callaction-content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* 순서꼭 지켜야함 */
+    /* 투명도 주는법! */
+    background: linear-gradient(
+            to right,
+            rgba(128, 0, 128, 0.356),
+            rgba(255, 166, 0, 0.61)
+        ),
+        url("./images/callaction-01.jpg");
+
+    background-size: cover;
+}
+.callaction .callaction-content p {
+    font-size: 50px;
+    padding: 0 400px;
+    text-align: center;
+    line-height: 1.5em;
+    color: white;
+    font-weight: 300;
+}
+.callaction .callaction-content p span {
+    font-weight: 500;
+}
+.callaction .callaction-content button {
+    width: 200px;
+    height: 40px;
+    background-color: rgb(100, 253, 100);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    box-shadow: white 0 0 5px;
+}
+.callaction .callaction-content button:hover {
+    box-shadow: white 0 0 10px;
+    transition: 0.5s;
+}
+
+/* Festival */
+.festival-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background-color: #333;
+    color: white;
+}
+.festival {
+}
+.festival .festival-header {
+}
+.festival .festival-header p {
+    font-size: 24px;
+    font-weight: 300;
+}
+.festival .festival-header p span {
+    font-weight: bold;
+}
+.festival .festival-btn {
+    display: flex;
+
+    width: 500px;
+}
+
+.festival-btn1 {
+    border-radius: 5px;
+    background-color: rgb(236, 214, 87);
+    padding: 6px;
+
+    text-align: center;
+    flex: 1;
+}
+.festival-btn1 a {
+    color: white;
+}
+.festival-btn2 {
+    border-radius: 5px;
+    background-color: #eee;
+    padding: 6px;
+    flex: 1;
+    text-align: center;
+
+    margin-left: 40px;
 }
