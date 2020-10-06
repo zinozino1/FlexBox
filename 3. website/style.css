@@ -122,6 +122,7 @@ header nav .gnb li a:hover {
 .about .inner .about-content .photo {
     flex: 3;
 }
+/* img를 div로 감싸야 플렉싱하기 편함 */
 .about .inner .about-content .photo img {
     width: 100%;
     /* 중첩해야 원하는대로 나옴 */
@@ -163,7 +164,7 @@ header nav .gnb li a:hover {
 .callaction .callaction-content button {
     width: 200px;
     height: 40px;
-    background-color: rgb(100, 253, 100);
+    background-color: rgb(90, 226, 90);
     color: white;
     border-radius: 5px;
     border: none;
@@ -209,6 +210,10 @@ header nav .gnb li a:hover {
     text-align: center;
     flex: 1;
 }
+.festival-btn1:hover {
+    box-shadow: white 0 0 5px;
+    transition: 0.5s;
+}
 .festival-btn1 a {
     color: white;
 }
@@ -220,4 +225,45 @@ header nav .gnb li a:hover {
     text-align: center;
 
     margin-left: 40px;
+}
+.festival-btn2:hover {
+    box-shadow: white 0 0 5px;
+    transition: 0.5s;
+}
+
+/* footer */
+footer {
+    background-color: #000;
+}
+.footer-content {
+    display: flex;
+    padding: 40px 0;
+}
+.footer-content ul {
+    text-align: center;
+}
+.footer-content ul li {
+}
+.footer-content ul li:first-child {
+    font-weight: 500;
+    color: #d9d9d9;
+}
+.footer-content ul li a {
+    color: #959595;
+}
+.footer-content .Community {
+    flex: 1;
+}
+.footer-content .Network {
+    flex: 1;
+}
+.footer-content .help {
+    flex: 2;
+}
+.footer-content .help li {
+    padding: 0 100px;
+    color: #959595;
+}
+.footer-content .help li:nth-last-child(1) {
+    padding-top: 20px;
 }
